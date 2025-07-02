@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+---
+
+<!-- Layout wrapper -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North American Eagle Holding Group</title>
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="bg-white text-gray-900 font-sans antialiased">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-blue-700 tracking-tight">North American Eagle Holding Group</div>
+        <ul class="flex flex-wrap gap-4 md:gap-8 text-base font-medium text-gray-700">
+          <li><a href="/" class="hover:text-blue-600 transition">Home & About Us</a></li>
+          <li class="relative group">
+            <a
+              href="/operations"
+              class="hover:text-blue-600 transition focus:outline-none"
+            >
+              Core Operations & Tech
+          </a>
+
+            <!-- Submenu -->
+            <div
+              class="absolute left-0 top-full mt-2 w-max bg-white border border-gray-200 rounded-md shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+            >
+              <a
+                href="/pegasus"
+                class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-50 hover:text-blue-700 transition whitespace-nowrap"
+              >
+                The Pegasus Project
+              </a>
+                            <a
+                href="/bcmining"
+                class="block px-4 py-2 text-sm text-gray-800 hover:bg-blue-50 hover:text-blue-700 transition whitespace-nowrap"
+              >
+                Mining in BC
+              </a>
+            </div>
+          </li>
+          <li><a href="/sustainability" class="hover:text-blue-600 transition">Sustainability & Investors</a></li>
+          <li><a href="/contact" class="hover:text-blue-600 transition">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+      <slot />
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400">
+      <div class="max-w-7xl mx-auto px-6 py-16 sm:py-24 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- Branding -->
+          <div class="text-left space-y-4 max-w-sm mx-auto">
+            <h3 class="text-xl font-semibold text-white">North American Eagle Holding Group</h3>
+            <p class="mt-4 text-sm leading-relaxed max-w-sm">
+              Advancing sustainable mineral solutions through innovation and precision. Proudly headquartered in North America, we deliver gold recovery systems engineered for performance and environmental responsibility.
+            </p>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="text-left space-y-4 max-w-sm mx-auto">
+            <h3 class="text-sm font-semibold text-white">📞 Contact</h3>
+            <ul class="mt-4 space-y-2">
+              <li>
+                <a href="tel:+17788371777" class="hover:text-white">Vancouver: (778) 837-1777</a>
+              </li>
+              <li>
+                <a href="tel:+16475206296" class="hover:text-white">Toronto: (647) 520-6296</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Links -->
+          <div class="text-left space-y-4 max-w-sm mx-auto">
+            <h3 class="text-sm font-semibold text-white ">🔗 Company</h3>
+            <ul class="mt-4 space-y-2">
+              <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-12 border-t border-gray-700 pt-6 text-sm text-center">
+          © 2025 North American Eagle Holding Group. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

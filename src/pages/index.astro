@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="space-y-16">
+
+    <!-- Hero Banner -->
+    <div class="bg-gray-100 rounded-xl p-10 flex flex-col md:flex-row items-center gap-8">
+      <img src="/banner.webp" alt="Mining Machinery" class="w-full md:w-1/2 rounded-lg shadow-md" />
+      <div class="md:w-1/2 space-y-4">
+        <h1 class="text-4xl font-extrabold text-blue-700">About Our Company</h1>
+        <p class="text-lg text-gray-700">
+          Empowering Mining with Technology, Driving Growth through Innovation.
+        </p>
+        <p class="text-gray-600">
+          Based in British Columbia, Canada, North American Eagle Holding Group is a high-tech enterprise
+          leading the way in mining and mineral processing equipment.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mission & Team -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4">
+        <h2 class="text-2xl font-semibold text-gray-900">Driven by Innovation</h2>
+        <p class="text-gray-600">
+          We bring together global talent and cutting-edge technology to engineer solutions
+          for modern mining challenges. Our R&D team is passionate, skilled, and deeply committed to sustainable progress.
+        </p>
+      </div>
+      <img src="/rd.webp" alt="R&D Team" class="rounded-lg shadow" />
+    </div>
+
+    <!-- Products Overview -->
+    <section class="py-16 bg-gray-50 rounded-xl">
+      <div class="max-w-7xl mx-auto px-6 space-y-12">
+        <h2 class="text-3xl font-bold text-center text-gray-800">Flagship Technologies</h2>
+
+        <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          
+          <!-- Product Card 1 -->
+          <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/machine.webp" alt="Jig Machine" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-blue-700">Intelligent Jig Machines</h3>
+              <p class="text-gray-600 text-sm">
+                Precision pulse control for higher recovery and accuracy in mineral separation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/machine2.webp" alt="Shaking Table" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-blue-700">Multi-layer Shaking Tables</h3>
+              <p class="text-gray-600 text-sm">
+                Smart structural design and control for efficient separation and enrichment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+              <img src="/machine3.webp" alt="Sluice" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-semibold text-blue-700">Optimized Sluices</h3>
+              <p class="text-gray-600 text-sm">
+                Advanced surface treatment and fluid dynamics for better heavy mineral recovery.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Vision -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="/global.webp" alt="Global Network" class="rounded-lg shadow" />
+      <div class="space-y-4">
+        <h2 class="text-2xl font-semibold text-gray-900">A Global Presence</h2>
+        <p class="text-gray-600">
+          We serve clients worldwide, providing not only high-performance equipment but also full-cycle
+          support — from installation to after-sales service.
+        </p>
+      </div>
+    </div>
+
+    <!-- Vision Statement -->
+    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded">
+      <p class="text-gray-800 text-lg">
+        Looking ahead, TechMine Solutions will lead with innovation and integrity — expanding into
+        mine development and metallurgical refining, driving global mining toward a smarter and greener future.
+      </p>
+    </div>
+
+  </section>
+</BaseLayout>

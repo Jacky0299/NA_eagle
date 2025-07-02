@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="space-y-20">
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 px-6 text-center rounded-xl shadow-md overflow-hidden">
+      <div class="max-w-4xl mx-auto relative z-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">The Pegasus Channel Project</h1>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          A cutting-edge initiative to unlock low-grade placer gold in British Columbia through advanced sensing, modeling, and recovery systems.
+        </p>
+      </div>
+      <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('/p3.webp');"></div>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="space-y-10">
+      <h2 class="text-3xl font-bold text-blue-800">📍 Project Overview</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-3">
+        <li><strong>Location:</strong> Quesnel, BC — 25km east of town, directly accessible via Barkerville Highway.</li>
+        <li><strong>Discovery:</strong> First identified in 1985 via remote sensing & sediment mapping.</li>
+        <li><strong>2023 Technical Report:</strong> Integrated 14 years of exploration and introduced "Blue Sky" inferred zones.</li>
+        <li><strong>Resource Goal:</strong> 20+ tonnes of recoverable gold with expansion potential into upstream deposits.</li>
+        <li><strong>Elevation:</strong> ~1000m; ideal topography for open-cut and modular processing.</li>
+      </ul>
+    </div>
+
+    <!-- Geological Model -->
+    <div class="space-y-10">
+      <h2 class="text-3xl font-bold text-blue-800">🧭 Geological Profile & Resources</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="list-disc list-inside text-gray-700 space-y-3">
+          <li><strong>Channel Scale:</strong> 10+ km length, 500–1000m wide, 20–42m depth.</li>
+          <li><strong>Stratigraphy:</strong> Ice-age glacial overburden (7–18m) atop auriferous gravel beds (8–27m).</li>
+          <li><strong>Bedrock:</strong> Quesnel Terrane black siltstone — traps fine gold beneath paleochannel.</li>
+        </ul>
+        <img src="/p2.webp" alt="Pegasus Paleochannel Cross Section" class="rounded-lg shadow mx-auto">
+      </div>
+    </div>
+
+    <!-- Resource Table -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm text-left text-gray-700 border border-gray-300 rounded-md shadow">
+        <thead class="bg-blue-800 text-white">
+          <tr>
+            <th class="p-3 font-semibold">Resource Type</th>
+            <th class="p-3 font-semibold">Ore Volume (t)</th>
+            <th class="p-3 font-semibold">Grade (g/t)</th>
+            <th class="p-3 font-semibold">Contained Gold (g)</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white">
+          <tr><td class="p-3">Measured</td><td class="p-3">8.41M</td><td class="p-3">0.11–0.15</td><td class="p-3">925k–1.26M</td></tr>
+          <tr class="bg-gray-50"><td class="p-3">Indicated</td><td class="p-3">5.58M</td><td class="p-3">0.10–0.136</td><td class="p-3">559k–760k</td></tr>
+          <tr><td class="p-3">Inferred</td><td class="p-3">25.2M</td><td class="p-3">0.09</td><td class="p-3">2.26M</td></tr>
+          <tr class="bg-gray-50"><td class="p-3">Blue Sky</td><td class="p-3">95.77M</td><td class="p-3">0.09–0.15</td><td class="p-3">8.61M–18.69M</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Mining & Processing Tech -->
+    <div class="space-y-10">
+      <h2 class="text-3xl font-bold text-blue-800">⚙️ Mining & Processing Strategy</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-3">
+        <li><strong>Excavation:</strong> Hitachi ZX1100 + Cat D10s for stripping and bulk excavation.</li>
+        <li><strong>Screening:</strong> Gold Machine 640tph units for pre-classification (cut size: 76mm).</li>
+        <li><strong>Recovery:</strong> Spiral + jigging combo with 85% total recovery efficiency.</li>
+        <li><strong>Back-end:</strong> Centrifugal concentrators + induction-based smelting into dore bars.</li>
+      </ul>
+      <img src="/method2.webp" alt="Processing Flowchart" class="rounded-lg shadow mx-auto w-full max-w-xl" />
+    </div>
+
+    <!-- Financial Snapshot -->
+    <div class="bg-blue-50 px-6 py-10 rounded-xl shadow">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">📊 Financial Model (5-Year)</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="text-lg font-semibold text-blue-700">Initial CapEx</p>
+          <p class="text-2xl font-bold">$5.5M CAD</p>
+        </div>
+        <div>
+          <p class="text-lg font-semibold text-blue-700">Net Profit Margin</p>
+          <p class="text-2xl font-bold">64.5%</p>
+        </div>
+        <div>
+          <p class="text-lg font-semibold text-blue-700">5-Year Gross Revenue</p>
+          <p class="text-2xl font-bold">$716M CAD</p>
+        </div>
+      </div>
+      <p class="mt-4 text-center text-sm text-gray-600">IRR ranges 20%–229% depending on expansion pace and gold price ($1600/oz assumed).</p>
+    </div>
+
+    <!-- Risk Mitigation -->
+    <div class="space-y-6">
+      <h2 class="text-3xl font-bold text-blue-800">⚠️ Risk Management & Strategic Response</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-3">
+        <li>Gold price volatility offset by conservative modeling and hedging options.</li>
+        <li>Zero-tailings strategy with closed-loop water systems to meet BC compliance.</li>
+        <li>Phased development starting with Measured zones (14.6Mt).</li>
+        <li>Eligibility for Canada Mineral Tax Credit (30% federal offset).</li>
+      </ul>
+    </div>
+
+    <!-- Closing Section -->
+    <div class="text-center pt-12">
+      <h2 class="text-2xl font-bold text-blue-700">🏁 Summary</h2>
+      <p class="text-gray-700 mt-4 max-w-3xl mx-auto">
+        Pegasus Channel represents a rare opportunity to scale low-grade placer gold mining with verified geological models, scalable recovery tech, and upstream growth. Its robust economics and minimized environmental impact position it as a future leader in Canadian mineral innovation.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

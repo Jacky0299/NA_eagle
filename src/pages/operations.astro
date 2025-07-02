@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="space-y-20">
+    <h1 class="text-5xl font-extrabold text-center text-blue-800">Core Operations & Technological Advancements</h1>
+
+    <!-- Section 1: Exploration Technologies -->
+    <div class="space-y-10">
+      <h2 class="text-3xl font-bold text-gray-900">Placer Gold Exploration Techniques</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Placer gold deposits, commonly found in alluvial environments shaped by rivers or glacial activity, require a multi-disciplinary exploration approach. We integrate geology, geophysics, geochemistry, and shallow drilling to identify and assess target zones with technical precision.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ul class="list-disc list-inside text-gray-700 space-y-3">
+          <li>🗺️ <strong>Geological Survey:</strong> Delineation of paleo-channels and sediment stratigraphy using field mapping and facies analysis.</li>
+          <li>📡 <strong>Geophysical Methods:</strong> ERT and seismic refraction for profiling bedrock troughs; magnetometry for structural inference.</li>
+          <li>🧪 <strong>Geochemical Sampling:</strong> Analysis of heavy mineral concentrates, gold grain morphology, and trace element anomalies.</li>
+          <li>🛠️ <strong>Shallow Drilling:</strong> Auger, RC, and sonic drilling with trench verification to assess deposit continuity and grade.</li>
+        </ul>
+        <ul class="list-disc list-inside text-gray-700 space-y-3">
+          <li>🏺 <strong>Heavy Mineral Testing:</strong> Traditional panning for quick in-field assessment of grain size, shape, and count.</li>
+          <li>🚁 <strong>Remote Sensing & UAV:</strong> High-resolution drone photogrammetry and LiDAR modeling for paleo-hydrological reconstruction.</li>
+          <li>🧭 <strong>3D Geological Modeling:</strong> Integration of all data into Surpac, Vulcan, or GIS for volumetric estimation and planning.</li>
+        </ul>
+      </div>
+
+      <div class="mt-6 text-center">
+        <img src="/uav.webp" alt="UAV Terrain Mapping" class="rounded-xl shadow mx-auto w-full max-w-4xl" />
+        <p class="text-sm text-gray-500 mt-2">Figure: UAV-based terrain mapping and paleo-channel identification in placer fields</p>
+      </div>
+    </div>
+
+    <!-- Section 2: Mining Operations & Recovery -->
+    <div class="space-y-10">
+      <h2 class="text-3xl font-bold text-gray-900">Mining Operations & Gold Recovery Technologies</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-5">⛏️ Mining Methods</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Open-Pit:</strong> Bulk extraction using excavators; ideal for shallow, laterally extensive deposits.</li>
+            <li><strong>Hydraulic Mining:</strong> Water cannon-based sediment mobilization; now rarely used due to regulation.</li>
+            <li><strong>Dredging:</strong> Historic use of bucketline dredges in submerged or deep placer zones.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-5">⚖️ Gravity Separation</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Sluice Systems:</strong> Carpet-lined channels to separate gold via density-driven flow.</li>
+            <li><strong>Shaking Tables:</strong> Ideal for fine-grained material; uses vibration and stratification.</li>
+            <li><strong>Trommel + Sluice:</strong> Combines screening and flow-based recovery for high-volume operations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-5">🔁 Concentrate Upgrading</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Centrifugal Concentrators:</strong> Falcon & Knelson for ultra-fine gold recovery using high G-force.</li>
+            <li><strong>Smelting:</strong> Final refinement into dore bars using flux-based melting in induction furnaces.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-5">🌱 Environmental Compliance</h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Adherence to BC’s <em>Placer Tenure</em> and NoW permit process.</li>
+            <li>Use of sedimentation ponds and water recycling systems.</li>
+            <li>Mandatory land restoration and revegetation post-mining.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 text-center">
+        <img src="/method.webp" alt="Placer Gold Processing Flow" class="rounded-lg shadow mx-auto w-full max-w-xl" />
+      </div>
+    </div>
+
+    <!-- Section 3: Technological Innovation -->
+    <div class="relative bg-gray-100 overflow-hidden rounded-xl shadow-lg">
+    <!-- Background image -->
+    <div class="absolute inset-0">
+        <img src="/smart.webp" alt="Smart Placer Mining System" class="w-full h-full object-cover opacity-20" />
+    </div>
+
+    <!-- Content overlay -->
+    <div class="relative space-y-10 px-6 py-12 md:py-16 backdrop-blur-sm">
+        <h2 class="text-3xl font-bold text-gray-900 text-center">🔬 Modernization & Smart Mining Systems</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+        <ul class="list-disc list-inside text-gray-800 space-y-3">
+            <li>🚁 <strong>Autonomous UAV Mapping:</strong> High-resolution GPS/LiDAR-integrated drone mapping for terrain modeling.</li>
+            <li>🧰 <strong>Integrated Mobile Plants:</strong> Modular, trailer-mounted systems with trommel, concentrator, and sluice integration.</li>
+        </ul>
+        <ul class="list-disc list-inside text-gray-800 space-y-3">
+            <li>📈 <strong>Real-Time Monitoring:</strong> Particle size/gold content sensors integrated for on-site optimization.</li>
+            <li>♻️ <strong>Green Innovations:</strong> Closed-loop water systems, dry tailings disposal, and low-impact site designs.</li>
+        </ul>
+        </div>
+        <p class="text-sm text-gray-600 text-center">Smart Mining: Next-gen mobile recovery systems with onboard analytics and minimal footprint</p>
+    </div>
+    </div>
+</BaseLayout>

@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <section class="max-w-4xl mx-auto py-20 px-6 space-y-16">
+    <div class="text-center space-y-6">
+      <h1 class="text-5xl font-extrabold text-blue-800 mb-2">📬 Contact Us</h1>
+      <p class="text-lg text-gray-600 leading-loose">
+        We'd love to hear from you. Reach out with inquiries, feedback, or collaboration opportunities.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <!-- Contact Details -->
+      <div class="space-y-10 text-gray-700 leading-loose">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-semibold text-blue-700 mb-5">📍 Head Office</h2>
+          <p>North American Eagle Holding Group</p>
+          <p>Suite 102, 555 Burrard Street</p>
+          <p>Vancouver, BC V7X 1M8, Canada</p>
+        </div>
+
+        <div class="space-y-2">
+          <h2 class="text-2xl font-semibold text-blue-700 mb-5">📞 Contact</h2>
+          <p>Phone (Vancouver): <a href="tel:+17788371777" class="text-blue-600 hover:underline">(778) 837-1777</a></p>
+          <p>Phone (Toronto): <a href="tel:+16475206296" class="text-blue-600 hover:underline">(647) 520-6296</a></p>
+          <p>Email: <a href="mailto:info@northeagle.ca" class="text-blue-600 hover:underline">info@northeagle.ca</a></p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="bg-gray-50 p-10 rounded-xl shadow space-y-8">
+        <div class="space-y-3">
+          <label for="name" class="block text-sm font-medium text-gray-800 leading-loose">Full Name</label>
+          <input type="text" id="name" class="w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" required />
+        </div>
+        <div class="space-y-3">
+          <label for="email" class="block text-sm font-medium text-gray-800 leading-loose">Email Address</label>
+          <input type="email" id="email" class="w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" required />
+        </div>
+        <div class="space-y-3">
+          <label for="message" class="block text-sm font-medium text-gray-800 leading-loose">Your Message</label>
+          <textarea id="message" rows="6" class="w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-700 text-white font-medium py-3 rounded-md hover:bg-blue-800 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
